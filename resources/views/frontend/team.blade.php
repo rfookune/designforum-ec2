@@ -46,14 +46,20 @@
 @section('header')
 	<div class="hero">
 		<div class="header">
-			<h1>Our Team</h1>
+			<div class="header-logo">
+				<img src="/img/logo/logo.png" alt="">
+			</div>
+			<div class="header-content">
+				<h1 class="headline">Our Team</h1>
+			    <p class="sub-headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate repellat error aliquam molestiae commodi iure beatae eveniet.</p>
+			</div>
 		</div>
 	</div>
 @endsection
 
 @section('content')
 
-<div class="section">
+<div class="section section--dark">
 	<div class="container main">
 		<div class="content">
 			<div class="row">
@@ -104,19 +110,11 @@
 	</div>
 </div>
 	
-
-<div class="section">
+<div class="section section--divider">
 	<div class="container main">
-		<div class="content">
-			<div class="row">
-				<div class="col-sm-5 intro line-height--2 text-serif">
-					<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non a sunt molestiae dolores voluptatem odio debitis quibusdam ipsa facilis in numquam, iste, voluptate ut? Dolorem eveniet aspernatur veniam, natus.</i></p>
-				</div>
-			</div>
-		</div>	
+		
 	</div>
 </div>
-
 
 <div class="section section--light">
 	<div class="container main">

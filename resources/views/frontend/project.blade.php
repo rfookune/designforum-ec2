@@ -89,7 +89,17 @@
 @endsection
 
 @section('header')
-	<div class="hero hero-sm"></div>
+	<div class="hero">
+		<div class="header">
+			<div class="header-logo">
+				<img src="/img/logo/logo.png" alt="">
+			</div>
+			<div class="header-content">
+				<h1 class="headline">Moka Gymnasium</h1>
+			    <p class="sub-headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate repellat error aliquam molestiae commodi iure beatae eveniet.</p>
+			</div>
+		</div>
+	</div>
 @endsection
 
 @section('content')
@@ -97,6 +107,42 @@
 <div class="section section--light">
 	<div class="main container">
 		<div class="row">
+			<div class="col-md-7">
+				<div class="content">
+					<div class="slider">	
+						<div id="js-carousel" class="owl-carousel owl-theme">
+							<a href="https://placem.at/places?w=1000&h=550" data-lightbox="roadtrip" class="item">
+								<img src="https://placem.at/places?w=1000&h=550">
+							</a>
+							<a href="https://placem.at/people?w=1000&h=550" data-lightbox="roadtrip" class="item">
+								<img src="https://placem.at/people?w=1000&h=550">
+							</a>
+							<a href="https://placem.at/things?w=1000&h=550" data-lightbox="roadtrip" class="item">
+								<img src="https://placem.at/things?w=1000&h=550">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="content project-content">
+					<div class="tag-wrapper">
+						<p><span class="mdi mdi-tag-outline"></span> Category 1</p>
+					</div>
+					<div class="detail">
+						<p><b>Client: </b> Lorem Ipsum</p>
+						<p><b>Date: </b> 07/07/2012</p>
+						<p><b>Location: </b> Moka, Mauritius</p>
+						<p><b>Info: </b> Lorem ipsum dolor sit amet, consectetur.</p>
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eius consectetur optio quaerat nesciunt. Quod labore possimus iusto rem, quam tempora quos dolorum earum delectus at, facilis reprehenderit eos exercitationem.</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- <div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="content grid-split-2">
 					<div class="row">
@@ -120,9 +166,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="row" style="margin-top: 50px">
+		<!-- <div class="row" style="margin-top: 50px">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="content">
 					<div class="slider">	
@@ -140,7 +186,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 	
