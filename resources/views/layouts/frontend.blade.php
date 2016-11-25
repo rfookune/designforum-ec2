@@ -29,7 +29,6 @@
         }
 
         .content--split-2 .text-wrapper .title {
-            margin-bottom: 30px;
             font-weight: 700;
         }
 

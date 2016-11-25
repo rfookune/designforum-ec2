@@ -14,6 +14,8 @@ return [
 
     'name' => 'Design Forum',
 
+   'google_map_key' => 'AIzaSyAP2degU6OWqaJVoIKslIMubw0u_ocqNKk',
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

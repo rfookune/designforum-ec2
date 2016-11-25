@@ -31,6 +31,10 @@ body {
 	}
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 h1, h2, .text-serif {
 	font-family: 'Lora', serif;
 	color: $primaryColor;
@@ -42,8 +46,8 @@ h1, h2, .text-serif {
 }
 
 .line-height--2 {
-	line-height: 2.2;
-    font-size: 1.2em;
+	line-height: 1.9;
+    font-size: 1.1em;
     letter-spacing: 0.15em;
     word-spacing: 0.15em;
 }
@@ -59,6 +63,7 @@ a {
 
 .section {
     overflow: auto;
+    position: relative;
 }
 
 .section.section--light {
@@ -98,6 +103,7 @@ a:hover, a:focus {
 nav.navbar {
 	max-width: 1300px;
 	margin: 0 auto;
+	z-index: 6;
 }
 
 .row--flex, .col--flex {
@@ -111,6 +117,17 @@ nav.navbar {
 
 	.col--flex.col--flex-md {
 		display: block;
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.text-right-md {
+		text-align: right;
+	}
+
+	.text-right-md .hr.hr-short {
+		margin-left: auto;
+		margin-right: 0;
 	}
 }
 
@@ -406,8 +423,9 @@ a.text-hover {
 
 nav.navbar {
 	transition: all 0.3s ease;
-	padding: 5px 15px;
+	padding: 10px 15px;
 	margin-bottom: 0;
+	box-shadow: $box-shadow-2;
 	.navbar-brand {font-size: 25px;}
 
   	.navbar-nav {
@@ -446,6 +464,7 @@ body:not(.sidebar-on) nav.navbar.large {
   	background: transparent;
   	border-color: transparent;
   	color: #fff;
+  	box-shadow: none;
 
 	.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
 		color: #fff;
@@ -542,6 +561,14 @@ body:not(.sidebar-on) nav.navbar.large {
 	position: relative;
 }
 
+.hr.hr-short {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-top: 2px solid #120a4d;
+    width: 80px;
+    margin-left: 0;
+}
+
 .hr.hr-primary:after {
 	font: normal normal normal 24px/1 "Material Design Icons";
 	content: "\F0E3";
@@ -556,6 +583,10 @@ body:not(.sidebar-on) nav.navbar.large {
 
 .hr.hr-primary.divider-light:after {
 	background: #fff;
+}
+
+.hr.hr-primary.divider-dark:after {
+	background: #f1f1f1;
 }
 
 .subheader {
@@ -780,3 +811,228 @@ body:not(.sidebar-on) nav.navbar.large {
     }
 }
 
+
+
+.team-grid {
+  
+  div[class^='col-'], div[class*=' col-'] {
+    padding: 0;
+  }
+  
+  .member {
+    z-index: 0;
+    position: relative;
+    background: #FFF;
+    box-shadow: 0 0 0 1px #E2E9ED;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 550px;
+    margin: 0 auto;
+    -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+    transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+    font-family: 'Roboto', sans-serif;
+
+    a {
+      color: #6F808A;
+      &:hover, &:focus {
+        color: #6F808A;
+        text-decoration: none;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+
+  .member--inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+  }
+
+  .member--avatar {
+    width: 110px ;
+    height: 110px;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .member--name {
+    color: #313435;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .member--title, .member--footer {
+    color: #6F808A;
+    font-size: 0.9em;
+  }
+
+  .member--footer {
+    margin: 0 0 -18px;
+    opacity: 0;
+    -webkit-transition: margin 0.2s ease, opacity 0.2s ease;
+    transition: margin 0.2s ease, opacity 0.2s ease;
+    .lnr {
+      position: relative;
+      top: 1px;
+    }
+    .member--open {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: $bs-sm) {
+    .member {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+
+  .member:hover {
+    z-index: 1;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+    transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+
+    .member--footer {
+      margin: 16px 0 0;
+      opacity: 1;
+    }
+  }
+}
+
+.member-overlay {
+  
+  a {
+    color: #6F808A;
+    &:hover, &:focus {
+      color: #6F808A;
+      text-decoration: none;
+    }
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  z-index: 10;
+  overflow-x: scroll;
+  text-align: center;
+  display: none;
+
+  .m-overlay--close {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .m-overlay--inner {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .m-overlay--avatar {
+    width: 180px ;
+    height: 180px;
+    border-radius: 100%;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .m-overlay--header {
+    font-family: 'Roboto', sans-serif;
+    color: #6F808A;
+    margin-bottom: 30px;
+    
+    .name {
+      color: #313435;
+      font-size: 1.6em;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+  }
+}
+
+.m-overlay-split {
+  @media (max-width: $bs-lg) {
+    .m-overlay--question-wrapper .m-overlay--inner {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+.m-overlay--question-wrapper {
+  text-align: left;
+  .m-overlay--inner {
+    border-left: 2px solid #ddd;
+    padding-left: 30px;
+    margin-left: 20px;
+
+    .m-overlay--question {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 2px solid #ddd;
+      .quote {
+        font-size: 2.5em;
+        padding-right: 15px;
+        line-height: 1.5;
+      }
+    }
+    
+    .m-overlay--question:first-of-type {
+      padding-top: 0;
+    }
+
+    .m-overlay--question:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.m-overlay-wrapper.m-overlay-centered {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  .m-overlay--inner {
+    margin: 40px;
+  }
+}

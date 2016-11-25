@@ -72,7 +72,7 @@
 			top: 0;
 			left: 0;
 			-webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-			transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+			transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 			visibility: hidden;
 			background: rgba(0,0,0,0.8);
 			opacity: 0;
