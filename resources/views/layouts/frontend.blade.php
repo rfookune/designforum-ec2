@@ -52,11 +52,11 @@
 
         @include('frontend.partials.navbar')
         @include('frontend.partials.sidebar')
-
+        
         @yield('header')
-
+        
         @yield('content')
-
+        
         @include('frontend.partials.footer')
 
         <a href="#" id="to--top" class="to--top"><span class="mdi mdi-chevron-up"></span></a>
@@ -65,6 +65,7 @@
 
     <!-- Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
     <script src=//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js></script>
     <script src="/js/frontend.js"></script>
 

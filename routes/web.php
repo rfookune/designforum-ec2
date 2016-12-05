@@ -19,6 +19,10 @@ Route::get('/laravel', function () {
     return view('welcome');
 });
 
+Route::get('/coming-soon', function(){
+	return view('coming-soon');
+});
+
 Route::get('/', 'FrontendController@home');
 
 Route::get('/portfolio', 'FrontendController@portfolio');

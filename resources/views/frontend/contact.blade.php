@@ -7,9 +7,6 @@
 @section('header')
 	<div class="hero">
 		<div class="header">
-			<div class="header-logo">
-				<img src="/img/logo/logo.png" alt="">
-			</div>
 			<div class="header-content">
 				<h1 class="headline">Contact Us</h1>
 			    <p class="sub-headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate repellat error aliquam molestiae commodi iure beatae eveniet.</p>
@@ -34,7 +31,7 @@
 							<div class="unit-body">
 								<p class="text-dark">Address:</p>
 								<a class="text-hover" href="https://www.google.com/maps/place/Design+Forum+Ltd/@-20.265755,57.4801254,17z/data=!4m5!3m4!1s0x217c5b41ab3c575f:0xa05c06f172fe9915!8m2!3d-20.2654531!4d57.4826628">
-									8 Avenue des Capucines <br>
+									6 Avenue des Capucines <br>
 									Quatre Bornes, Mauritius
 								</a>
 							</div>
@@ -122,8 +119,8 @@
 	                </div>
 	                <div class="row">
 	                    <div class="col-md-12">
-	                    	<br>
-	                    	<button type="submit" class="btn btn-color btn-submit">Send</button>
+	                    	<button class="btn btn-color btn-clear" id="js-clear" style="margin-right: 10px; margin-top: 20px">Clear</button>
+	                    	<button type="submit" class="btn btn-color btn-submit" style="margin-right: 10px; margin-top: 20px">Send</button>
 	                    </div>
 	                </div>
 	            </form>
@@ -148,6 +145,13 @@
         });
 
         $(function(){
+
+        	$('#js-clear').on('click', function(event){
+        		event.preventDefault();
+        		$('#js-contact-form input[type="text"]').val('');
+        		$('#js-contact-form textarea').val('');
+        	})
+
 	        $('#js-contact-form').on('submit', function(e){
 	        	e.preventDefault();
 	        	var url = '/send-message';

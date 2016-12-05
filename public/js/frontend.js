@@ -8,7 +8,9 @@ $(document).ready(function(){
 	$('#to--top').on('click', function(event){
 		event.preventDefault();
 		$("html, body").animate({ scrollTop: 0 }, "slow");
-	})
+	});
+
+	$('a[data-scroll]').smoothScroll();
 });
 
 $(window).scroll(function() {

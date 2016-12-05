@@ -9,12 +9,13 @@
 @section('header')
 	<div class="hero">
 		<div class="header">
-			<div class="header-logo">
-				<img src="/img/logo/logo.png" alt="">
-			</div>
 			<div class="header-content">
 				<h1 class="headline">Our Team</h1>
 			    <p class="sub-headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate repellat error aliquam molestiae commodi iure beatae eveniet.</p>
+			    <div class="btn-wrapper">
+			    	<a href="/" class="btn btn-transparent" style="margin-right: 20px;">Home</a>
+			    	<a href="/contact" class="btn btn-color">Contact us</a>
+			    </div>
 			</div>
 		</div>
 	</div>

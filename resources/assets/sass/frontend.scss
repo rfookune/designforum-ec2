@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Lora');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 // Variables
 @import "variables";
@@ -10,9 +11,12 @@
 
 /* USING BOOTSTRAP 3.0.3 */
 body {
-	// padding-top: 111px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+	
+	// font-family: 'Raleway', sans-serif;
+	
+	font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 	color: $text-color;
 	background: $bg-color;
 
@@ -31,6 +35,10 @@ body {
 	}
 }
 
+p {
+	line-height: 30px;
+}
+
 .no-scroll {
 	overflow: hidden;
 }
@@ -41,7 +49,7 @@ h1, h2, .text-serif {
 }
 
 .text-sans {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: $text-color;
 }
 
@@ -129,6 +137,15 @@ nav.navbar {
 		margin-left: auto;
 		margin-right: 0;
 	}
+
+	.text-center-md {
+		text-align: center;
+	}
+
+	.text-center-md .hr.hr-short {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .to--top {
@@ -160,20 +177,21 @@ nav.navbar {
 
 .hero {
 	height: 550px;
-	// background-image: url('http://parklanepenthouses.com/wp-content/themes/gph/img/layout/page-header-bg.jpg');
-	// background-color: #9ba08f;
-    // background-position: center center;
-    // background-size: cover;
 	position: relative;
 	background: #fff;
+    
     background-image: url('http://www.shapespark.com/img/cover-504.jpg');
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-position: right bottom;
-    background-size: auto 80%;
-    background-repeat: no-repeat;
-    text-align: center;
+
+    background-image: url('http://www.greenlys.co.uk/workspace/static/assets/img/hero.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero:after {
@@ -188,13 +206,16 @@ nav.navbar {
 
 .hero .header {
 	position: absolute;
-	bottom: 80px;
+	bottom: 110px;
 	left: 0;
 	width: 100%;
 	padding-left: 5%;
-    padding-right: 58%;
-	text-align: center;
+    padding-right: 50%;
 	z-index: 2;
+}
+
+.hero .header .header-content {
+	max-width: 400px;
 }
 
 .hero .header-logo img {
@@ -204,23 +225,25 @@ nav.navbar {
 
 .hero .header-content .headline {
 	margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 3em;
 }
 
 .hero .header-content .sub-headline {
-	margin-bottom: 15px;
-    font-size: 1.1em;
+    margin-bottom: 25px;
+    line-height: inherit;
+    font-size: 1.15em;
 }
 
 .hero .header-content .btn-wrapper .btn {
 	margin-top: 10px;
 }
 
-
-@media only screen and (max-width : 991px) {
+@media only screen and (max-width : $bs-sm - 1) {
 	.hero {
 		height: auto;
     	background: #fff;
+    	text-align: center;
 	}
 	.hero .header {
 		position: relative;
@@ -229,6 +252,10 @@ nav.navbar {
 	    padding: 120px 10px 50px;
 	    max-width: 500px;
     	margin: 0 auto;
+	}
+
+	.hero .header .header-content {
+		max-width: 1000px;
 	}
 
 	.hero:after {
@@ -325,6 +352,7 @@ a.text-hover {
 
 .btn-color {
     background: rgba($primaryColor, 0.95);
+    border: solid 1px $primaryColor;
     color: #fff;
     span {
          color: #fff;
@@ -340,6 +368,23 @@ a.text-hover {
 }
 
 .btn-transparent {
+    background: transparent;
+    border: solid 1px $primaryColor;
+    color: $primaryColor;
+    span {
+         color: $primaryColor;
+    }
+    &:hover {
+        background: transparent;
+    	color: $primaryColor;
+    }
+    &:active, &:focus {
+        background: transparent;
+	    color: $primaryColor;
+    }
+}
+
+.btn-transparent-white {
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
@@ -426,7 +471,14 @@ nav.navbar {
 	padding: 10px 15px;
 	margin-bottom: 0;
 	box-shadow: $box-shadow-2;
-	.navbar-brand {font-size: 25px;}
+	.navbar-brand {
+		font-size: 25px;
+		padding: 5px;
+		img {
+			height: 50px;
+			padding: 5px;
+		}
+	}
 
   	.navbar-nav {
   		padding-left: 50px;
@@ -438,7 +490,7 @@ nav.navbar {
 			text-transform: uppercase;
 			padding: 0;
 			margin: 0 25px;
-			font-weight: 700;
+			font-weight: 500;
 			border-bottom: 2px solid transparent;
 			transition: all 0.3s ease;
 
@@ -759,6 +811,10 @@ body:not(.sidebar-on) nav.navbar.large {
 		box-shadow: none;
 	}
 
+	.panel-title {
+		font-weight: 300;
+	}
+
 	.panel-default > .panel-heading {
 		position: relative;
 		border-radius: 0;
@@ -826,8 +882,8 @@ body:not(.sidebar-on) nav.navbar.large {
     box-shadow: 0 0 0 1px #E2E9ED;
     padding: 10px;
     box-sizing: border-box;
-    max-width: 550px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 40px auto;
     -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
     transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
     transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
@@ -1010,6 +1066,7 @@ body:not(.sidebar-on) nav.navbar.large {
       padding-top: 20px;
       border-bottom: 2px solid #ddd;
       .quote {
+        font-family: "Lora", serif;
         font-size: 2.5em;
         padding-right: 15px;
         line-height: 1.5;

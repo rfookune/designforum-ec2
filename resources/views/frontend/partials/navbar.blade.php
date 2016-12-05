@@ -4,7 +4,7 @@
 
 		<div class="navbar-header">
 			<a href="#" class="sidebar-toggle"><span class="mdi mdi-menu"></span></a>
-			<a class="navbar-brand hidden-md hidden-lg" href="#">Design Forum</a>
+			<a class="navbar-brand" href="/"><img src="/img/logo/logo.png" alt="Design Forum"></a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
