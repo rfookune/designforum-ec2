@@ -5,6 +5,12 @@ $(document).ready(function(){
 	sidebarOpen();
 	scrollTopDisplay();
 
+	$('#nav--btn-contact').on('click', function(event){
+		event.preventDefault();
+		console.log('hi!');
+		$('#nav--link-contact').click();
+	})
+
 	$('#to--top').on('click', function(event){
 		event.preventDefault();
 		$("html, body").animate({ scrollTop: 0 }, "slow");

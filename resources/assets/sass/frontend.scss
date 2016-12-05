@@ -476,8 +476,18 @@ nav.navbar {
 		padding: 5px;
 		img {
 			height: 50px;
+			top: 50%;
 			padding: 5px;
+		    position: relative;
+		    transform: translateY(-50%) scale(1);
+		    transition: $transition;
 		}
+	}
+
+	.btn-contact {
+		position: relative;
+	    top: -8px;
+	    margin-left: 10px;
 	}
 
   	.navbar-nav {
@@ -507,6 +517,14 @@ nav.navbar {
 					background: transparent;
 				}
 			}
+		}
+	}
+}
+
+nav.navbar.large {
+	.navbar-brand {
+		img {
+			transform: translateY(-50%) scale(1.5);
 		}
 	}
 }

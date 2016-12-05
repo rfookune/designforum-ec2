@@ -8154,7 +8154,19 @@ nav.navbar .navbar-brand {
 
 nav.navbar .navbar-brand img {
   height: 50px;
+  top: 50%;
   padding: 5px;
+  position: relative;
+  -webkit-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+  -webkit-transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+nav.navbar .btn-contact {
+  position: relative;
+  top: -8px;
+  margin-left: 10px;
 }
 
 nav.navbar .navbar-nav {
@@ -8185,6 +8197,11 @@ nav.navbar .navbar-nav .active a {
 
 nav.navbar .navbar-nav .active a:hover {
   background: transparent;
+}
+
+nav.navbar.large .navbar-brand img {
+  -webkit-transform: translateY(-50%) scale(1.5);
+  transform: translateY(-50%) scale(1.5);
 }
 
 body:not(.sidebar-on) nav.navbar.large {

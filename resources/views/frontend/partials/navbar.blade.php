@@ -14,7 +14,8 @@
 				<li class="{{Request::is('portfolio') ? 'active' : ''}}"><a class="animsition-link" href="/portfolio">Portfolio</a></li>
 				<li class="{{Request::is('team') ? 'active' : ''}}"><a class="animsition-link" href="/team">Our Team</a></li>
 				<li class="{{Request::is('faq') ? 'active' : ''}}"><a class="animsition-link" href="/faq">FAQ</a></li>
-				<li class="{{Request::is('contact') ? 'active' : ''}}"><a class="animsition-link" href="/contact">Contact Us</a></li>
+				<li style="display: none;"><a class="animsition-link" id="nav--link-contact" href="/contact">FAQ</a></li>
+				<li><button class="animsition-link btn btn-color btn-contact" id="nav--btn-contact">Contact Us</button></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
