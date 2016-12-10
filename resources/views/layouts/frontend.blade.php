@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="/css/flaticon.css">
     <link href="/css/frontend.css" rel="stylesheet">
     <style>
+
         .content--split-2 .img-wrapper {
             text-align: center;
+            margin-top: 30px;
         }
 
         .content--split-2 .img-wrapper .flaticon {
@@ -26,16 +28,50 @@
         }
 
         .content--split-2 .img-wrapper img {
-            max-height: 250px;
+            /*max-height: 250px;*/
+            display: block;
+            position: absolute;
+            z-index: 1;
+            max-width: 90%;
         }
 
-        .content--split-2 .text-wrapper .title {
-            font-weight: 700;
+        .text-wrapper .text-header {
+            padding-bottom: 30px;
+        }
+
+        .text-wrapper .text-header .title {
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 1.7em;
+        }
+
+        .text-wrapper .text-header .title2 {
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        .content--split-2 .sec--btn-group {
+            margin-top: 35px;
+        }
+
+        .content--split-2 .sec--btn-group .btn:first-of-type {
+            margin-right: 15px;
         }
 
         .content--split-2 .text-wrapper {
             padding: 10px 25px;
-            line-height: 1.7;
+        }
+
+        .content--split-2 .img-wrapper-full {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .content--split-2 .img-wrapper-full img {
+            position: relative;
+            max-width: 90%;
+            max-height: 350px;
         }
     </style>
     @yield('styles')

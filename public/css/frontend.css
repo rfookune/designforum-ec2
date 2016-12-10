@@ -7694,7 +7694,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
+  line-height: 1.6;
   word-spacing: 0.15em;
   color: #636b6f;
   background: #161b1f;
@@ -7753,7 +7754,6 @@ a {
 }
 
 .section {
-  overflow: auto;
   position: relative;
 }
 
@@ -7828,6 +7828,10 @@ nav.navbar {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.text-dark {
+  color: #000;
 }
 
 .to--top {
@@ -8007,14 +8011,18 @@ a.text-hover:hover {
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
   min-width: 120px;
   max-width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  border-radius: 2px;
   font-size: 0.9em;
   font-family: 'Roboto', sans-serif;
+  vertical-align: top;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0;
 }
 
 .btn-color {
@@ -8201,7 +8209,7 @@ nav.navbar .navbar-brand.brand-color {
 
 nav.navbar .contact-link {
   position: relative;
-  top: -12px;
+  top: -9px;
 }
 
 nav.navbar .contact-link .btn-contact {
@@ -8220,6 +8228,7 @@ nav.navbar .navbar-nav {
 nav.navbar .navbar-nav a {
   text-transform: uppercase;
   padding: 0;
+  font-size: 12px;
   margin: 0 25px;
   font-weight: 500;
   border-bottom: 2px solid transparent;
@@ -8361,10 +8370,10 @@ body:not(.sidebar-on) nav.navbar.large .navbar-brand {
 }
 
 .hr.hr-short {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 25px;
-  border-top: 2px solid #120a4d;
-  width: 80px;
+  border-top: solid 1px #979797;
+  width: 180px;
   margin-left: 0;
 }
 
@@ -8545,7 +8554,8 @@ body:not(.sidebar-on) nav.navbar.large .navbar-brand {
   font-size: 1.4em;
   font-weight: 700;
   color: #1d107a;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .tile--wrapper .tile--text .detail {
@@ -8566,7 +8576,7 @@ body:not(.sidebar-on) nav.navbar.large .navbar-brand {
 @media only screen and (max-width: 992px) {
   .tile--wrapper {
     max-width: 400px;
-    margin: 0px auto 50px;
+    margin: 0px auto 100px;
   }
 }
 
@@ -8921,7 +8931,7 @@ body:not(.sidebar-on) nav.navbar.large .navbar-brand {
 }
 
 .carousel-item .carousel-content {
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .carousel-item .carousel-content .title {
@@ -8941,7 +8951,7 @@ body:not(.sidebar-on) nav.navbar.large .navbar-brand {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .owl-carousel .owl-item .carousel-image img {

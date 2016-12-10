@@ -1,4 +1,4 @@
-<div class="section section--dark" id="anchor--learn-more">
+<div class="section section--dark">
 	<div class="container main">
 
 		<div class="row">

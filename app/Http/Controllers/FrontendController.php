@@ -25,7 +25,7 @@ class FrontendController extends Controller
 
     public function portfolio()
     {
-    	return view('frontend.portfolio');
+    	return view('frontend.portfolio.index');
     }
 
     public function project($slug)

@@ -16,7 +16,7 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 	});
 
-	$('a[data-scroll]').smoothScroll();
+	$('a[data-scroll]').smoothScroll({'offset': -150});
 });
 
 $(window).scroll(function() {

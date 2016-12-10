@@ -1,4 +1,4 @@
-<div class="hero parallax-window" id="hero" data-stellar-background-ratio="0.5">
+<div class="hero parallax-window" id="hero">
 	<div class="header-wrapper">
 		<div class="header">
 			<div class="header-content">
