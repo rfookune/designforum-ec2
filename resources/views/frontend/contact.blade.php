@@ -21,7 +21,7 @@
 	<div class="container main">
 		<div class="row center-sm">
 			<div class="col-md-4">
-				<h2 class="subheader">Find us</h2>
+				<!-- <h2 class="subheader">Find us</h2> -->
 				<div class="row">
 					<div class="col-sm-6 col-md-12">
 						<div class="contact-unit">
@@ -78,19 +78,19 @@
 					
 			</div>
 			<div class="col-md-8">
-				<h2 class="subheader">Get in touch with us</h2>
+				<h2 class="subheader">Get in touch</h2>
 				<form method="POST" action="/send-message" class="form" id="js-contact-form">
 	                {{ csrf_field() }}
 	                <div class="row">
 	                    <div class="col-sm-6">
 	                        <div class="form-group">
-	                            <label class="text-gray">First Name</label>
+	                            <!-- <label>First Name</label> -->
 	                            <input type="text" name="name_first" class="form-control" placeholder="First Name">
 	                        </div>
 	                    </div>
 	                    <div class="col-sm-6">
 	                        <div class="form-group">
-	                            <label class="text-gray">Last Name</label>
+	                            <!-- <label>Last Name</label> -->
 	                            <input type="text" name="name_last" class="form-control" placeholder="Last Name">
 	                        </div>
 	                    </div>
@@ -98,13 +98,13 @@
 	                <div class="row">
 	                    <div class="col-sm-6">
 	                        <div class="form-group">
-	                            <label class="text-gray">Email</label>
+	                            <!-- <label>Email</label> -->
 	                            <input type="text" name="email" class="form-control" placeholder="Email">
 	                        </div>
 	                    </div>
 	                    <div class="col-sm-6">
 	                        <div class="form-group">
-	                            <label class="text-gray">Phone Number</label>
+	                            <!-- <label>Phone Number</label> -->
 	                            <input type="text" name="phone_number" class="form-control" placeholder="Phone Number">
 	                        </div>
 	                    </div>
@@ -112,7 +112,7 @@
 	                <div class="row">
 	                    <div class="col-sm-12">
 	                        <div class="form-group">
-	                            <label class="text-gray">Message</label>
+	                            <!-- <label>Message</label> -->
 	                            <textarea name="message" class="form-control" rows="5" placeholder="Message"></textarea>
 	                        </div>
 	                    </div>

@@ -5,10 +5,10 @@ $(document).ready(function(){
 	sidebarOpen();
 	scrollTopDisplay();
 
-	$('#nav--btn-contact').on('click', function(event){
-		event.preventDefault();
-		console.log('hi!');
-		$('#nav--link-contact').click();
+	new WOW().init();
+
+	$('#nav--btn-contact').on('click', function(event) {
+		window.location.href = "/contact";
 	})
 
 	$('#to--top').on('click', function(event){
@@ -27,14 +27,23 @@ $(window).scroll(function() {
 
 $(window).resize(function() {
 	sidebarOn();
+	navbarCollapse();
 });
 
 function navbarCollapse() {
-	if ($(document).scrollTop() > 50) {
+	if ( $(window).width() > 991 ) {
+		if ($(document).scrollTop() > 50) {
+	    	$('nav').removeClass('large');
+	    	$('nav .btn-contact').removeClass('btn-transparent-white').addClass('btn-color');
+	  	} else {
+	    	$('nav').addClass('large');
+	    	$('nav .btn-contact').removeClass('btn-color').addClass('btn-transparent-white');
+	  	}
+	} else {
     	$('nav').removeClass('large');
-  	} else {
-    	$('nav').addClass('large');
+    	$('nav .btn-contact').removeClass('btn-transparent-white').addClass('btn-color');
   	}
+		
 }
 
 function sidebarOpen() {

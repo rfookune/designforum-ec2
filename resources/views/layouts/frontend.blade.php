@@ -13,6 +13,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.7.22/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/flaticon.css">
     <link href="/css/frontend.css" rel="stylesheet">
     <style>
@@ -64,9 +65,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
     <script src=//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.0.0/wow.min.js"></script>
     <script src="/js/frontend.js"></script>
 
     @yield('scripts')
