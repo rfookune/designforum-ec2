@@ -43,7 +43,8 @@
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            font-size: 1.7em;
+            line-height: 1.4;
+            font-size: 1.6em;
         }
 
         .text-wrapper .text-header .title2 {
@@ -53,6 +54,10 @@
 
         .content--split-2 .sec--btn-group {
             margin-top: 35px;
+        }
+
+        .content--split-2 .sec--btn-group .btn {
+            margin-bottom: 10px;
         }
 
         .content--split-2 .sec--btn-group .btn:first-of-type {

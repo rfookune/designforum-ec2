@@ -4,7 +4,7 @@
 		<div class="content content--split-2">
 			<div class="row">
 				<div class="col-md-5 visible-md visible-lg">
-					<div class="img-wrapper" style="margin-top: 30px;">
+					<div class="img-wrapper" style="margin-top: 20px;">
 						<img src="/img/home/call-action-1.png" alt="action-1" class="wow fadeInLeft" data-wow-delay="0.2s" data-wow-offset="300">
 						<img src="/img/home/call-action-2.png" alt="action-2" class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-offset="300">
 						<img src="/img/home/call-action-3.png" alt="action-3" class="wow fadeInLeft" data-wow-offset="300">
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 				<div class="col-md-5 visible-md visible-lg">
-					<div class="img-wrapper" style="margin-top: 30px;">
+					<div class="img-wrapper" style="margin-top: 20px;">
 						<img src="/img/home/call-action-22.png" alt="action-2" class="wow fadeInUp" data-wow-delay="0.1s" data-wow-offset="300">
 						<img src="/img/home/call-action-23.png" alt="action-3" class="wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="300">
 						<img src="/img/home/call-action-21.png" alt="action-1" class="wow fadeInUp" data-wow-offset="300">

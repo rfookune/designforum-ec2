@@ -2,12 +2,7 @@
 	<div class="header-wrapper">
 		<div class="header">
 			<div class="header-content">
-				<h1 class="headline">Our Work</h1>
-			    <p class="sub-headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo laboriosam odio dolore. Autem nemo nihil.</p>
-			    <div class="btn-wrapper">
-			    	<a href="/" class="btn btn-white" style="margin-right: 20px;">Home</a>
-			    	<a href="#anchor--learn-more" data-scroll class="btn btn-transparent-white">Learn More</a>
-			    </div>
+				<h1 class="headline">Frequently Asked Questions</h1>
 			</div>
 		</div>
 	</div>

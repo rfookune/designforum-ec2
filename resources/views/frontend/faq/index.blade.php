@@ -1,21 +1,13 @@
 @extends('layouts.frontend')
 
 @section('header')
-	<div class="hero">
-		<div class="header">
-			<div class="header-content">
-				<h1 class="headline">Frequently Asked Questions</h1>
-			    <p class="sub-headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate repellat error aliquam molestiae commodi iure beatae eveniet.</p>
-			</div>
-		</div>
-	</div>
+	@include('frontend.faq.includes.header')
 @endsection
 
 @section('content')
 
-
 <div class="section section--light">
-	<div class="container main">
+	<div class="container main no-top-padding">
 		<div class="content">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -101,6 +93,10 @@
 
 @section('scripts')
 	<script>
+	$(document).ready(function(){
+		$('#hero').parallax({imageSrc: '/img/test/StockSnap_42H3JH8QI5.jpg'});
+	});
+	
 	$('#accordion').on('hide.bs.collapse', function (e) {
 		$(e.target).closest('.panel').removeClass('active');
 	});

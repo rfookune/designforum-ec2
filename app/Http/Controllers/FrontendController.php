@@ -15,12 +15,12 @@ class FrontendController extends Controller
 
     public function contact()
     {
-    	return view('frontend.contact');
+    	return view('frontend.contact.index');
     }
 
     public function faq()
     {
-    	return view('frontend.faq');
+    	return view('frontend.faq.index');
     }
 
     public function portfolio()
@@ -30,7 +30,7 @@ class FrontendController extends Controller
 
     public function project($slug)
     {
-    	return view('frontend.project');
+    	return view('frontend.project.index');
     }
 
     public function team()

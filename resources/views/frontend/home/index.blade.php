@@ -4,17 +4,8 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
 	
 	<style>
-		.section.section-carousel  {
-			/*background: url('/img/test/StockSnap_YFHE4V3QVO.jpg');*/
-			/*background: url("http://template.brainwave.scientecraft.com/img/content/testimonial.jpg?v=1.0.0");*/
-    		background-size: cover;
-    		background-position: center;
-    		background-repeat: no-repeat;
-		}
-
 		.img-bottom {
 			position: relative;
-
 		}
 
 		.img-bottom img {
@@ -41,7 +32,8 @@
 	@include('frontend.home.includes.carousel')
 
 	@include('frontend.home.includes.why-us')
-
+	
+	@include('frontend.partials.contact-nav')
 
 @endsection
 

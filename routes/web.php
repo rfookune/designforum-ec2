@@ -20,14 +20,22 @@ Route::get('/laravel', function () {
 });
 
 Route::get('/coming-soon', function(){
-	return view('coming-soon');
+	return view('errors.coming-soon');
 });
 
-Route::get('/', 'FrontendController@home');
+Route::get('/', function(){
+	return view('errors.coming-soon');
+});
 
-Route::get('/portfolio', 'FrontendController@portfolio');
-Route::get('/team', 'FrontendController@team');
-Route::get('/portfolio/{slug}', 'FrontendController@project');
+Route::group(['prefix' => 'test'], function () {
+   Route::get('/', 'FrontendController@home');
 
-Route::get('/faq', 'FrontendController@faq');
-Route::get('/contact', 'FrontendController@contact');
+	Route::get('/portfolio', 'FrontendController@portfolio');
+	Route::get('/team', 'FrontendController@team');
+	Route::get('/portfolio/{slug}', 'FrontendController@project');
+
+	Route::get('/faq', 'FrontendController@faq');
+	Route::get('/contact', 'FrontendController@contact');
+});
+
+
