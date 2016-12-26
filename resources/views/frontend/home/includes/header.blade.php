@@ -1,12 +1,21 @@
 <div class="hero parallax-window" id="hero">
+	
+	<a class="hero-brand brand-top" href="/">
+		<img src="/img/logo/logo_white.png" alt="logo">
+	</a>
+
 	<div class="header-wrapper">
 		<div class="header">
+			<a class="hero-brand brand-middle" href="/">
+				<img src="/img/logo/logo_white.png" alt="logo">
+			</a>
 			<div class="header-content">
+				<p class="sub-headline">Pivate architecture firm based in Mauritius</p>
+				<hr>
 				<h1 class="headline">Design Forum</h1>
-			    <p class="sub-headline">Pivate architecture firm, @{{insert mission statement here}}.</p>
 			    <div class="btn-wrapper">
-			    	<a href="#anchor--learn-more" data-scroll class="btn btn-transparent-white" style="margin-right: 20px;">Learn More</a>
-			    	<a href="/portfolio" class="btn btn-white">Portfolio</a>
+			    	<a href="/portfolio" class="btn btn-white" style="margin-right: 20px;">Portfolio</a>
+			    	<a href="#anchor--learn-more" data-scroll class="btn btn-transparent-white">Learn More</a>
 			    </div>
 			</div>
 		</div>
@@ -24,6 +33,6 @@
   	</div>
 </div>
 
-<div class="brush-divider">
+<!-- <div class="brush-divider">
 	<div class="brush-stroke"></div>
-</div>
+</div> -->

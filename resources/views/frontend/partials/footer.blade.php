@@ -18,7 +18,7 @@
 				<div class="row">
 					<div class="col-sm-12 text-center">
 						<p>Icon created by <a href="http://www.flaticon.com/authors/madebyoliver">Oliver</a></p>
-						<p>&copy; 2016 All rights reserved to Design Forum LLC.</p>
+						<p>&copy; 2017 All rights reserved to Design Forum LLC.</p>
 					</div>
 				</div>
 			</div>

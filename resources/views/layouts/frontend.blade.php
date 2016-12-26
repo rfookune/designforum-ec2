@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel='shortcut icon' href='/img/logo/favicon.ico' type='image/x-icon'/ >
 
-    <title>{{ config('app.name', 'Design Forum') }}</title>
+    <title>{{ config('app.name', 'Design Forum Ltd.') }}</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.7.22/css/materialdesignicons.min.css">
@@ -91,8 +91,7 @@
 <body>
     
     <div class="main-content">
-
-        @include('frontend.partials.navbar')
+    
         @include('frontend.partials.sidebar')
         
         @yield('header')

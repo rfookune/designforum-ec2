@@ -1,4 +1,4 @@
-<div class="section section--light section--portfolio" id="anchor--learn-more">
+<div class="section section--light section--portfolio" id="anchor--portfolio">
 	<div class="container main no-top-padding">
 
 		<div class="row">

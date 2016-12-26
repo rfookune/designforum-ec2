@@ -19,23 +19,22 @@ Route::get('/laravel', function () {
     return view('welcome');
 });
 
-Route::get('/coming-soon', function(){
-	return view('errors.coming-soon');
-});
+// Route::get('/coming-soon', function(){
+// 	return view('errors.coming-soon');
+// });
 
-Route::get('/', function(){
-	return view('errors.coming-soon');
-});
+// Route::get('/', function(){
+// 	return view('errors.coming-soon');
+// });
 
-Route::group(['prefix' => 'test'], function () {
-   Route::get('/', 'FrontendController@home');
-
+// Route::group(['prefix' => 'test'], function () {
+   	Route::get('/', 'FrontendController@home');
+   	Route::get('/services', 'FrontendController@services');
 	Route::get('/portfolio', 'FrontendController@portfolio');
 	Route::get('/team', 'FrontendController@team');
 	Route::get('/portfolio/{slug}', 'FrontendController@project');
-
-	Route::get('/faq', 'FrontendController@faq');
+	// Route::get('/faq', 'FrontendController@faq');
 	Route::get('/contact', 'FrontendController@contact');
-});
+// });
 
 

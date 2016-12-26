@@ -15,10 +15,10 @@
 						<div class="text-header">
 							<p class="title2">Why Design Forum?</p>
 							<hr class="hr hr-short">
-							<h4 class="title text-dark">Lorem ipsum dolor sit.</h4>
+							<h4 class="title text-dark">Tailored to your needs.</h4>
 						</div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam doloremque porro animi labore mollitia sint dignissimos aliquid laborum? Temporibus tempore magnam non vitae cupiditate. Eius harum illum amet dolores.
+							Talk About broad range of project types.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam doloremque porro animi labore mollitia sint dignissimos aliquid laborum? Temporibus tempore magnam non vitae cupiditate. Eius harum illum amet dolores.
 						</p>
 						<div class="sec--btn-group">	
 							<a href="/" class="btn btn-color">Our Work</a>
@@ -47,10 +47,10 @@
 						<div class="text-header">
 							<p class="title2">Why Design Forum?</p>
 							<hr class="hr hr-short">
-							<h4 class="title text-dark">Lorem ipsum dolor sit.</h4>
+							<h4 class="title text-dark">Experience by your side.</h4>
 						</div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam doloremque porro animi labore mollitia sint dignissimos aliquid laborum? Temporibus tempore magnam non vitae cupiditate. Eius harum illum amet dolores.
+							Since it's inception in 1999 Design Forum Ltd has grew to become .... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam doloremque porro animi labore mollitia sint dignissimos aliquid laborum? Temporibus tempore magnam non vitae cupiditate. Eius harum illum amet dolores.
 						</p>
 						<div class="sec--btn-group">	
 							<a href="/" class="btn btn-color">Our Work</a>

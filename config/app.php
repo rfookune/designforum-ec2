@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Design Forum',
+    'name' => 'Design Forum Ltd.',
 
    'google_map_key' => 'AIzaSyAP2degU6OWqaJVoIKslIMubw0u_ocqNKk',
 

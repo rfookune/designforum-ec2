@@ -82,7 +82,7 @@
                <h2>Coming Soon!</h2>
            </div>
            <div class="content">
-               <p>Our website is in the final stage of development. Please check back on January 1<sup>st</sup> 2017 to see it live</p>
+               <p>Our website is in the final stage of development. Please check back on January 1<sup>st</sup> 2017 to see it live.</p>
            </div>
         </div>
     </div>

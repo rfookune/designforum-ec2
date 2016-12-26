@@ -3,18 +3,11 @@
 @section('styles')
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 	<style>
-		/*.map-iframe {
-			position: relative;
+		.hero {
+			background: url('http://themes.iki-bir.com/hygge/style/images/art/slider-bg1.jpg');
+			background-size: cover;
+    		background-position: center;
 		}
-		.map-iframe::before {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			background: rgba(0,0,0,0.75);
-		}*/
 	</style>
 @endsection
 

@@ -1,10 +1,23 @@
 @extends('layouts.frontend')
 
+@section('styles')
+	<style>
+		.hero {
+			background: url('http://themes.iki-bir.com/hygge/style/images/art/slider-bg1.jpg');
+			background-size: cover;
+    		background-position: center;
+		}
+	</style>
+@endsection
+
+
 @section('header')
 	@include('frontend.portfolio.includes.header')
 @endsection
 
 @section('content')
+	
+	@include('frontend.portfolio.includes.intro')
 
 	@include('frontend.portfolio.includes.gallery')
 
@@ -15,10 +28,6 @@
 @section('scripts')
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('#hero').parallax({imageSrc: '/img/test/StockSnap_42H3JH8QI5.jpg'});
-		});
-
 		$(function () {
 			var filterList = {	
 				init: function () {

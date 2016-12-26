@@ -18,6 +18,11 @@ class FrontendController extends Controller
     	return view('frontend.contact.index');
     }
 
+    public function services()
+    {
+        return view('frontend.services.index');
+    }
+
     public function faq()
     {
     	return view('frontend.faq.index');
@@ -35,6 +40,6 @@ class FrontendController extends Controller
 
     public function team()
     {
-    	return view('frontend.team');
+    	return view('frontend.team.index');
     }
 }

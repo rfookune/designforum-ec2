@@ -13,7 +13,7 @@
 						</div>
 						<div class="col-md-8 col--flex col--flex-md hidden-sm hidden-xs">
 							<div class="carousel-content">
-								<div class="text-wrapper text-center-md">
+								<div class="carousel-text-wrapper text-center-md">
 									<div class="text-header">
 										<h4 class="title">Certificate Of Incorporation</h4>
 									</div>
@@ -42,7 +42,7 @@
 						</div>
 						<div class="col-md-8 col--flex col--flex-md hidden-sm hidden-xs">
 							<div class="carousel-content">
-								<div class="text-wrapper text-center-md">
+								<div class="carousel-text-wrapper text-center-md">
 									<div class="text-header">
 										<h4 class="title">Certificate Of Registration</h4>
 									</div>
@@ -72,7 +72,7 @@
 						</div>
 						<div class="col-md-8 col--flex col--flex-md hidden-sm hidden-xs">
 							<div class="carousel-content">
-								<div class="text-wrapper text-center-md">
+								<div class="carousel-text-wrapper text-center-md">
 									<div class="text-header">
 										<h4 class="title">Insurance Registration</h4>
 									</div>

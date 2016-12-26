@@ -12,9 +12,9 @@
 			<div class="header-content">
 				<p class="sub-headline">Pivate architecture firm based in Mauritius</p>
 				<hr>
-				<h1 class="headline">Our Portfolio</h1>
+				<h1 class="headline">Our Services</h1>
 			    <div class="btn-wrapper">
-			    	<a href="/" class="btn btn-white" style="margin-right: 20px;">Home</a>
+			    	<a href="/portfolio" class="btn btn-white" style="margin-right: 20px;">Portfolio</a>
 			    	<a href="#anchor--learn-more" data-scroll class="btn btn-transparent-white">Learn More</a>
 			    </div>
 			</div>
@@ -32,7 +32,3 @@
 	  	</div>
   	</div>
 </div>
-
-<!-- <div class="brush-divider">
-	<div class="brush-stroke"></div>
-</div> -->

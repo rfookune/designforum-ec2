@@ -1,9 +1,22 @@
 <div class="container main no-top-padding" id="anchor--message">
-	<div class="row center-sm">
+	<div class="row center-md">
 		<div class="col-md-4">
 			<!-- <h2 class="subheader">Find us</h2> -->
-			<div class="row">
-				<div class="col-sm-6 col-md-12">
+			<div class="row contact-wrapper">
+				<div class="col-sm-4 col-md-12">
+					<div class="contact-unit">
+						<div class="unit-left">
+							<i class="flaticon flaticon-dialogue-phone"></i>
+						</div>
+						<div class="unit-body">
+							<p class="text-dark">Call Us Today:</p>
+							<a class="text-hover" href="tel:+230 465 9556">
+								+230 465 9556
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-12">
 					<div class="contact-unit">
 						<div class="unit-left">
 							<i class="flaticon flaticon-pin-placeholder"></i>
@@ -16,17 +29,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="contact-unit">
-						<div class="unit-left">
-							<i class="flaticon flaticon-dialogue-phone"></i>
-						</div>
-						<div class="unit-body">
-							<p class="text-dark">Call Us Today:</p>
-							<a class="text-hover" href="tel:+230 465 9556">
-								+230 465 9556
-							</a>
-						</div>
-					</div>
+				</div>
+				<div class="col-sm-4 col-md-12">
 					<div class="contact-unit">
 						<div class="unit-left">
 							<i class="flaticon flaticon-dialogue-envelope-8"></i>
@@ -39,7 +43,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-12">
+				<!-- <div class="col-sm-6 col-md-12">
 					<div class="contact-unit">
 						<div class="unit-left">
 							<i class="flaticon flaticon-essential-time"></i>
@@ -53,7 +57,7 @@
 							</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 				
 		</div>
